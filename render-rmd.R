@@ -12,6 +12,12 @@ if("-a" %in% file_names){
   }
 } else {file_names<-file_names}
 
+if(length(file_names) == 0){
+  print("please provide a list of .csv files.
+        
+        To specify all .csv files, use -a and a data
+        directory as input.")
+}
 
 for(file in file_names)
 {
